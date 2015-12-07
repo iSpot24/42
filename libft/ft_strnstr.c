@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
@@ -40,14 +39,5 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 			return (d);
 		}
 	}
-	return (0);
-}
-
-int		main(void)
-{
-	char	a[20] = "Foo Bar Baz";
-	char	b[20] = "Bar";
-
-	printf("%s\n", ft_strnstr(a, b, 7));
 	return (0);
 }

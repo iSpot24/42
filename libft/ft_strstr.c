@@ -12,23 +12,23 @@
 
 #include "libft.h"
 
-char	*ft_strstr(const char *s1, const char *s2)
+char	*ft_strstr(const char *big, const char *little)
 {
-	char	*d;
+	char		*d;
 	int		i;
 
-	d = (char *)s1;
+	d = (char *)big;
 	i = 0;
-	if (s2[0] == '\0')
+	if (little[0] == '\0')
 		return (d);
 	while (*d)
 	{
-		if (*d == s2[i])
+		if (*d == little[i])
 			i++;
 		else
 			i = 0;
 		d++;
-		if (s2[i] == '\0')
+		if (little[i] == '\0')
 		{
 			while (i > 0)
 			{
